@@ -1,0 +1,28 @@
+.app-header {
+  height: 100px;
+
+  box-shadow: 0px 6px 10px #c6c6c6;
+  background-color: rgb(28, 35, 61);
+}
+
+.app-header-title {
+  position: relative;
+  height: 100%;
+  margin: 0 0 0 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.app-header-text {
+  font-family: "Heebo", sans-serif;
+  font-size: 2.25rem;
+  font-weight: 400;
+  margin: 10px 0 0 8px;
+
+  background: -webkit-linear-gradient(#ffffff, #d5e2e8);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
