@@ -1,7 +1,15 @@
+.app {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
 .app-header {
+  flex-grow: 0;
   height: 100px;
 
-  box-shadow: 0px 6px 10px #c6c6c6;
   background-color: rgb(28, 35, 61);
 }
 
@@ -16,7 +24,6 @@
 }
 
 .app-header-text {
-  font-family: "Heebo", sans-serif;
   font-size: 2.25rem;
   font-weight: 400;
   margin: 10px 0 0 8px;
@@ -25,4 +32,28 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.app-content {
+  flex-grow: 1;
+
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.control-section {
+  height: 100%;
+  width: 300px;
+  flex-grow: 0;
+
+  border-right: 1px solid #c6c6c6;
+  background-color: #f9f9f9;
+
+  box-shadow: 2px 3px 6px #c6c6c6;
+}
+
+.widget-section {
+  flex-grow: 1;
+  height: 100%;
 }

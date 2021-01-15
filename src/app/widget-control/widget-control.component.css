@@ -1,0 +1,56 @@
+:host {
+  --control-section-font-color: rgba(0, 0, 0, 0.8);
+  --control-section-button-height: 36px;
+}
+
+.control-sections {
+  padding: 8px 0 0 0;
+}
+
+.control-section {
+  background-color: #f9f9f9;
+  padding: 8px 0 0 0;
+}
+
+.control-section-title {
+  color: var(--control-section-font-color);
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin: 0 0 8px 12px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+
+  text-align: left;
+  list-style: none;
+}
+
+ul li {
+  margin: 0;
+  padding: 0;
+
+  line-height: var(--control-section-button-height);
+}
+
+ul li button {
+  cursor: pointer;
+  height: var(--control-section-button-height);
+  width: 100%;
+  background-color: #f9f9f9;
+  border: 0;
+
+  padding: 0 0 0 12px;
+
+  font-size: 1rem;
+  text-align: left;
+  font-weight: 400;
+  color: var(--control-section-font-color);
+
+  transition: background-color 0.1s linear;
+}
+
+ul li button:hover {
+  background-color: #caeeff;
+}
