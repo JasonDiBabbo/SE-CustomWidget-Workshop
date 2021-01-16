@@ -8,7 +8,7 @@
 
 .app-header {
   flex-grow: 0;
-  height: 100px;
+  height: 80px;
 
   background-color: rgb(28, 35, 61);
 }
@@ -24,7 +24,7 @@
 }
 
 .app-header-text {
-  font-size: 2.25rem;
+  font-size: 1.75rem;
   font-weight: 400;
   margin: 10px 0 0 8px;
 
