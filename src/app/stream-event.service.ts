@@ -4,35 +4,35 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class StreamEventService {
-  public EmulateFollowerEvent(): void {
+  public emulateFollowerEvent(): void {
     throw new Error('Not implemented');
   }
 
-  public EmulateSubscriberEvent(): void {
+  public emulateSubscriberEvent(): void {
     throw new Error('Not implemented');
   }
 
-  public EmulateGiftedSubscriberEvent(): void {
+  public emulateGiftedSubscriberEvent(): void {
     throw new Error('Not implemented');
   }
 
-  public EmulateBulkGiftedSubscriberEvent(): void {
+  public emulateBulkGiftedSubscriberEvent(): void {
     throw new Error('Not implemented');
   }
 
-  public EmulateTipEvent(): void {
+  public emulateTipEvent(): void {
     throw new Error('Not implemented');
   }
 
-  public EmulateCheerEvent(): void {
+  public emulateCheerEvent(): void {
     throw new Error('Not implemented');
   }
 
-  public EmulateHostEvent(): void {
+  public emulateHostEvent(): void {
     throw new Error('Not implemented');
   }
 
-  public EmulateRaidEvent(): void {
+  public emulateRaidEvent(): void {
     throw new Error('Not implemented');
   }
 }

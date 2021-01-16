@@ -12,26 +12,26 @@ export class WidgetControlComponent implements OnInit {
   ngOnInit(): void {}
 
   public onEmulateFollowerEventClick(): void {
-    this.streamEventService.EmulateFollowerEvent();
+    this.streamEventService.emulateFollowerEvent();
   }
 
   public onEmulateSubscriberEventClick(): void {
-    this.streamEventService.EmulateSubscriberEvent();
+    this.streamEventService.emulateSubscriberEvent();
   }
 
   public onEmulateTipEventClick(): void {
-    this.streamEventService.EmulateTipEvent();
+    this.streamEventService.emulateTipEvent();
   }
 
   public onEmulateCheerEventClick(): void {
-    this.streamEventService.EmulateCheerEvent();
+    this.streamEventService.emulateCheerEvent();
   }
 
   public onEmulateHostEventClick(): void {
-    this.streamEventService.EmulateHostEvent();
+    this.streamEventService.emulateHostEvent();
   }
 
   public onEmulateRaidEventClick(): void {
-    this.streamEventService.EmulateRaidEvent();
+    this.streamEventService.emulateRaidEvent;
   }
 }
