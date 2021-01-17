@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { StreamEvent } from './models';
 
 @Injectable({
   providedIn: 'root',
@@ -34,5 +35,22 @@ export class StreamEventService {
 
   public emulateRaidEvent(): void {
     throw new Error('Not implemented');
+  }
+
+  private dispatchStreamEvent(event: StreamEvent, listener: string): void {
+    if (!window) {
+      throw new Error(
+        `'window' object is not available. The application is likely being run in the incorrect context. Open the application in a web-standard compliant browser.`
+      );
+    }
+
+    const eventData = {
+      detail: {
+        event,
+        listener,
+      },
+    };
+
+    window.dispatchEvent(new CustomEvent('onEventReceived', eventData));
   }
 }
